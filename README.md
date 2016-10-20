@@ -147,8 +147,8 @@ def delete_files():
   
   for filename in get_all_files():
   
-    if not remove_file(filename):
-        error = True
+   if not remove_file(filename):
+       error = True
 
   if error:
     return 'some files were not deleted', 400
@@ -188,11 +188,11 @@ def add_file(filename,content):
 
 def remove_file(filename):
 
-    remove_process = Popen(["rm",filename], stdout=PIPE, stderr=PIPE)
+   remove_process = Popen(["rm",filename], stdout=PIPE, stderr=PIPE)
     
-    remove_process.wait()
+   remove_process.wait()
     
-    return False if filename in get_all_files() else True
+   return False if filename in get_all_files() else True
 
 
 10.	Ahora, para poder implementar el servicio, abra el puerto 8080, que se está especificando en el archivo files.py y que posteriormente se usará también para el archivo recently_created.py, en las iptables, como el usuario root
@@ -217,27 +217,27 @@ Ahora podrá ver las pruebas al servicio web empleando Postman.
 
 Prueba de la URI para files con GET 
 
-![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/files GET.png)
+![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/blob/master/files%2GET.PNG)
 
 Prueba de la URI para files con POST y enviando un JSON
 
-![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/files POST.png)
+![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/blob/master/files%20POST.PNG)
 
 Ahora puede ver el resultado del post, al estar agregado el archivo
 
-![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/files POST2.png)
+![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/blob/master/files%20POST2.PNG)
 
 Prueba de la URI para files con PUT 
 
-![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/files PUT.png)
+![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/blob/master/files%20PUT.PNG)
 
 Prueba de la URI para files con DELETE 
 
-![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/files DELETE.png)
+![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/blob/master/files%20DELETE.PNG)
 
 Y ahora, puede ver la prueba de que se eliminaron los archivos correctamente
 
-![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/files DELETE2.png)
+![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/blob/master/files%20DELETE2.PNG)
 
 13.	Cancele la ejecución del servicio, presionando la combinación de teclas CTRL y la tecla C
 
@@ -298,19 +298,19 @@ $ (flask_env) python recently_created.py
 
 Prueba de la URI para files con GET
 
-![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/recently_created GET.png)
+![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/blob/master/recently_created%20GET.PNG)
 
 Prueba de la URI para files/recently_created  con POST
 
-![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/recently_created POST.png)
+![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/blob/master/recently_created%20POST.PNG)
 
 Prueba de la URI para files/recently_created  con PUT
 
-![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/recently_created PUT.png)
+![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/blob/master/recently_created%20PUT.PNG)
 
 Prueba de la URI para files/recently_created  con DELETE
 
-![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/recently_created DELETE.png)
+![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/blob/master/recently_created%20DELETE.PNG)
 
 17.	Cancele la ejecución del servicio, presionando la combinación de teclas CTRL y la tecla C
 
