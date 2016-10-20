@@ -26,6 +26,7 @@ __Prerrequisitos__
 __Instalación__
 
 Teniendo en cuenta que, para la implementación de los servicios web es necesario emplear entornos virtuales, se debe instalar lo siguiente:
+
 cd /tmp
 wget https://bootstrap.pypa.io/get-pip.py
 python get-pip.py
