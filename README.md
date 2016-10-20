@@ -16,12 +16,15 @@ __Objetivos__
 •	Implementar y desplegar servicios web en un servidor.
 
 __Introducción__
+
 En el presente informe se explicará una guía paso a paso de lo que se realizó para la implementación exitosa de los servicios web, usando comandos Linux.
 
 __Prerrequisitos__
+
 •	Sistema operativo CentOS 6.8 versión servidor
 
 __Instalación__
+
 Teniendo en cuenta que, para la implementación de los servicios web es necesario emplear entornos virtuales, se debe instalar lo siguiente:
 cd /tmp
 wget https://bootstrap.pypa.io/get-pip.py
@@ -29,6 +32,7 @@ python get-pip.py
 pip install virtualenv
 
 __Desarrollo__
+
 1. Cree un usuario llamado filesystem_user
 adduser filesystem_user
 passwd filesystem_user
