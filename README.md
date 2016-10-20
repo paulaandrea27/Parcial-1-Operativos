@@ -1,7 +1,7 @@
 # Informe Primer Parcial
 
-__Universidad ICESI 
-Curso:__ Sistemas Operativos
+__Universidad ICESI__ 
+__Curso:__ Sistemas Operativos
 __Estudiante:__ Paula Andrea Bolaños Arias.
 __Código:__ 13207002 – A00068008
 __Correo:__ pauandre27@gmail.com
