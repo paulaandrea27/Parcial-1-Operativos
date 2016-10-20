@@ -1,12 +1,17 @@
 # Informe Primer Parcial
 
 __Universidad ICESI__ 
+
 __Curso:__ Sistemas Operativos
+
 __Estudiante:__ Paula Andrea Bolaños Arias.
+
 __Código:__ 13207002 – A00068008
+
 __Correo:__ pauandre27@gmail.com
 
 __Objetivos__
+
 •	Emplear comandos de linux para la realización de tareas administrativas y obtener información del sistema operativo.
 •	Implementar y desplegar servicios web en un servidor.
 
