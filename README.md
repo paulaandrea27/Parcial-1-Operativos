@@ -1,43 +1,43 @@
 # Informe Primer Parcial
 
-# Universidad ICESI
-# Curso: Sistemas Operativos
-# Estudiante: Paula Andrea Bolaños Arias.
-# Código: 13207002 – A00068008
-# Correo: pauandre27@gmail.com
+Universidad ICESI
+Curso: Sistemas Operativos
+Estudiante: Paula Andrea Bolaños Arias.
+Código: 13207002 – A00068008
+Correo: pauandre27@gmail.com
 
-# Objetivos
+Objetivos
 •	Emplear comandos de linux para la realización de tareas administrativas y obtener información del sistema operativo.
 •	Implementar y desplegar servicios web en un servidor.
 
-# Introducción
+Introducción
 En el presente informe se explicará una guía paso a paso de lo que se realizó para la implementación exitosa de los servicios web, usando comandos Linux.
 
-# Prerrequisitos
+Prerrequisitos
 •	Sistema operativo CentOS 6.8 versión servidor
 
-# Instalación
+Instalación
 Teniendo en cuenta que, para la implementación de los servicios web es necesario emplear entornos virtuales, se debe instalar lo siguiente:
-#cd /tmp
-#wget https://bootstrap.pypa.io/get-pip.py
-#python get-pip.py
-#pip install virtualenv
+cd /tmp
+wget https://bootstrap.pypa.io/get-pip.py
+python get-pip.py
+pip install virtualenv
 
-# Desarrollo
+Desarrollo
 1. Cree un usuario llamado filesystem_user
-#adduser filesystem_user
-#passwd filesystem_user
+adduser filesystem_user
+passwd filesystem_user
 
 2.	Dé al usuario filesystem_user los permisos de root
-#nano /etc/sudoers
+nano /etc/sudoers
 Añada a la línea debajo de “root  ALL=(ALL:ALL)ALL”, la línea:
 “filesystem_user  ALL=(ALL:ALL)ALL”.
 
 3.	Conozca su ip para las diferentes conexiones remotas y para las pruebas
-#ifconfig
+ifconfig
 
 4.	Cree un ambiente virtual en el usuario filesystem_user
-#su filesystem_user
+su filesystem_user
 $ cd ~/
 $ mkdir env
 $ cd env
@@ -198,4 +198,4 @@ Prueba de la URI para files con DELETE
 18.	Desactive el ambiente virtual
 $ deactivate
 
-# Enlace Repositorio Github: https://github.com/paulaandrea27/Parcial-1-Operativos.git
+Enlace Repositorio Github: https://github.com/paulaandrea27/Parcial-1-Operativos.git
