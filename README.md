@@ -1,29 +1,29 @@
 # Informe Primer Parcial
 
-Universidad ICESI
-Curso: Sistemas Operativos
-Estudiante: Paula Andrea Bolaños Arias.
-Código: 13207002 – A00068008
-Correo: pauandre27@gmail.com
+__Universidad ICESI 
+Curso:__ Sistemas Operativos
+__Estudiante:__ Paula Andrea Bolaños Arias.
+__Código:__ 13207002 – A00068008
+__Correo:__ pauandre27@gmail.com
 
-Objetivos
+__Objetivos__
 •	Emplear comandos de linux para la realización de tareas administrativas y obtener información del sistema operativo.
 •	Implementar y desplegar servicios web en un servidor.
 
-Introducción
+__Introducción__
 En el presente informe se explicará una guía paso a paso de lo que se realizó para la implementación exitosa de los servicios web, usando comandos Linux.
 
-Prerrequisitos
+__Prerrequisitos__
 •	Sistema operativo CentOS 6.8 versión servidor
 
-Instalación
+__Instalación__
 Teniendo en cuenta que, para la implementación de los servicios web es necesario emplear entornos virtuales, se debe instalar lo siguiente:
 cd /tmp
 wget https://bootstrap.pypa.io/get-pip.py
 python get-pip.py
 pip install virtualenv
 
-Desarrollo
+__Desarrollo__
 1. Cree un usuario llamado filesystem_user
 adduser filesystem_user
 passwd filesystem_user
@@ -142,12 +142,17 @@ $ (flask_env) python files.py
 Instale la extensión Postman en su navegador de Google Chrome.
 Ahora podrá ver las pruebas al servicio web empleando Postman. 
 Prueba de la URI para files con GET 
+![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/files GET.png)
 Prueba de la URI para files con POST y enviando un JSON
+![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/files POST.png)
 Ahora puede ver el resultado del post, al estar agregado el archivo
+![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/files POST2.png)
 Prueba de la URI para files con PUT 
+![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/files PUT.png)
 Prueba de la URI para files con DELETE 
+![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/files DELETE.png)
 Y ahora, puede ver la prueba de que se eliminaron los archivos correctamente
-
+![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/files DELETE2.png)
 13.	Cancele la ejecución del servicio, presionando la combinación de teclas CTRL y la tecla C
 
 14.	Para implementar el contrato para /files/recently_created, cree un archivo de nombre recently_created.py
@@ -189,13 +194,17 @@ $ (flask_env) python recently_created.py
 
 16.	Pruebas del servicio web /files/recently_created usando Postman
 Prueba de la URI para files con GET
-Prueba de la URI para files con POST
-Prueba de la URI para files con PUT
-Prueba de la URI para files con DELETE
+![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/recently_created GET.png)
+Prueba de la URI para files/recently_created  con POST
+![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/recently_created POST.png)
+Prueba de la URI para files/recently_created  con PUT
+![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/recently_created PUT.png)
+Prueba de la URI para files/recently_created  con DELETE
+![alt tag](https://github.com/paulaandrea27/Parcial-1-Operativos/recently_created DELETE.png)
 
 17.	Cancele la ejecución del servicio, presionando la combinación de teclas CTRL y la tecla C
 
 18.	Desactive el ambiente virtual
 $ deactivate
 
-Enlace Repositorio Github: https://github.com/paulaandrea27/Parcial-1-Operativos.git
+__Enlace Repositorio Github:__ https://github.com/paulaandrea27/Parcial-1-Operativos.git
